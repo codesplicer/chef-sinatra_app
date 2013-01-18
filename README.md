@@ -45,7 +45,6 @@ Usage
 Using this cookbook is pretty straightforward. Heres an example of a basic role:
 
   ```
-  cat roles/appserver.rb
   name "Appserver"
   description "Servers that run our awesome sinatra-powered app"
   run_list(
