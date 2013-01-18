@@ -36,8 +36,8 @@ The following attributes **must** be specified in your roles or environments in 
 * `node['sinatra_app']['repository']` - The git URL for the repository you wish to deploy. e.g. git://github.com/codesplicer/test-sinatra-app.git
 * `node['sinatra_app']['branch']` - The branch you wish to deploy. Default is master.
 * `node['sinatra_app']['deploy_dir']` - The directory you wish to deploy to. e.g. e.g. /home/sites/awesome-app
-* `node['sinatra_app']['server_name']` - The URL you wish to host your app at. This sets the vhost server_name attribute and filename.
 * `node['sinatra_app']['docroot']` - The path where your code will run from. Will usually be your deploy directory with /current at the end. e.g. /home/sites/awesome-app/current
+* `node['sinatra_app']['server_name']` - The URL you wish to host your app at. This sets the vhost server_name attribute and filename.
 
 
 Usage
@@ -58,7 +58,6 @@ Using this cookbook is pretty straightforward. Heres an example of a basic role:
       "branch" => "master",
       "deploy_dir" => '/home/ubuntu/newyork-newyork',
       "docroot" => '/home/ubuntu/newyork-newyork/current',
-      "app_name" => 'newyork-newyork',
       "server_name" => 'newyork.example.com'
     }
   })
